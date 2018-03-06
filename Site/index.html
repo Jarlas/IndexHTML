@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulário de inscrição - Gonow</title>
+		<meta charset="utf-8"/>
+        <meta name="language" content="pt-BR" />
+        <meta name="description" content="html,titulos,cabeçalho, seo, meta tags" />
+        <meta name="author" content="Jarlas Alves" />
+        <link rel="stylesheet" type="text/css" href="Estilo.css" />
+        
+        
+	</head>
+    
+	<body>
+        <div id="painelFormulario">
+             <h1>Formulário de inscrição</h1>
+            <hr/>
+            <form id="formulario-inscricao" name="formulario-inscricao" method="post" action="/inscricao/cadastrar">
+                <table>
+                    <tr>
+                        <td><span>Nome: </span></td>
+                        <td><input type="text" id="nome" name="nome" class="campo-texto" /></td>
+                    </tr>
+                    <tr>
+                        <td><span>CPF: </span></td>
+                        <td><input type="text" id="cpf" name="cpf" class="campo-texto" /></td>
+                    </tr>
+                    <tr>
+                        <td><span>E-mail: </span></td>
+                        <td><input type="text" id="email" name="email" class="campo-texto" /></td>
+                    </tr>
+                    <tr>
+                        <td><span>Endereço:</span></td>
+                        <td><input type="text" id="endereco" name="endereco" class="campo-texto" /></td>
+                    </tr>
+                    <tr>
+                        <td><span>Área de interesse:</span></td>
+                        <td>
+                            <select name="area-interesse" name="areaInteresse">
+                            <option value="intereface" selected="selected">Programa de interface</option>
+                                <option value="java">Programador JAVA</option>
+                                <option value="php">Programa PHP</option>
+                                <option value="python">Programa Python</option>
+                                <option value="ruby">Programa Ryby</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td><span>Sexo:</span></td>
+                        <td>
+                        <input type="radio" id="generoMasc" name="genero" value="masc" />Masculino
+                        <input type="radio" id="generoFem" name="genero" value="fem" />Feminino   
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>Deseja cadastrar-se em nossa Newsletter:</span></td>
+                        <td><input type="checkbox" name="newsletter" value="sim" checkbox="checkbox" />Sim</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div>
+                                <input type="checkbox" name="agree" id="agree" value="sim" />
+                                Li e aceito os termos de responsabilidade.
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div>
+                                <button type="submit" id="enviar">Enviar</button>
+                                                              
+                                
+                            </div>
+                        
+                        </td>
+                    </tr>
+                </table>
+            
+            </form>
+		</div>
+	</body>
+</html>
